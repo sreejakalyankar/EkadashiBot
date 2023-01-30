@@ -1,0 +1,419 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - what_is_ekadashi
+  - what_is_ekadashi_fasting
+  - who_is_ekadashi
+  - significance_of_ekadashi
+  - how_to_do_ekadashi
+  - why_ekadashi_fasting
+  - rules_of_ekadashi
+  - can_we_do_chanting
+  - how_many_rounds
+  - procedure_for_chanting
+  - who_perform_fasting
+  - benefits_of_ekadashi
+  - time_to_start_and_end
+  - wonderful_changes_fasting
+  - why_rice_prohibited
+  - food_consumption
+  - can_i_eat_grains
+  - when_next_ekadashi
+  - nameof_next_ekadashi
+  - storyof_next_ekadashi
+  - parana_start_and_end
+  # - banglore_location
+  # - hyderabad_location
+  - iskcon_celebrates_ekadashi_nextday
+  - banglore
+  - hyderabad
+  - usa
+  - europe
+  - how_old_are_you
+  - can_you_get_smarter
+  - are_you_busy
+  - can_you_help_me
+  - are_you_happy
+  - hobby
+  - are_we_friends
+  - where_are_you_from
+  - are_you_sure
+  - are_you_there
+  - thank_you
+  - how_are_you
+  - what_are_you_doing
+  - new_delhi
+  - ekadashi_dates_list
+  - prev_ekadashi_name
+  - days_left_ekadashi
+
+entities:
+  - ekadashi_name
+  - ekadashi_story
+  - paran_start_time
+  - paran_end_time
+  - banglore_paran_start
+  - banglore_paran_end
+  - hyderabad_paran_start
+  - hyderabad_paran_end
+  - ekadashi_date
+  - ekadashi_date1
+  - ekd_date_usa
+  - ekd_date_europe
+  - usa_paran_start
+  - usa_paran_end
+  - europe_paran_start
+  - europe_paran_end
+  - ekadashi_date2
+  - ekadashi_date_list
+  - ekd_date_europe_list
+  - ekd_date_usa_list
+  - ekadashi_prev_name
+  - days_left_india
+  - days_left_euro
+  - days_left_usa
+
+slots:
+  ekadashi_name:
+    type: text
+    mappings:
+    - type: custom
+      intent: nameof_next_ekadashi
+      action: action_next_ekadashi_name
+
+  ekadashi_story:
+    type: text
+    mappings:
+    - type: custom
+      intent: storyof_next_ekadashi
+      action: action_next_ekadashi_story
+
+  paran_start_time:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_paran_start_and_end
+
+  paran_end_time:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_paran_start_and_end
+
+  banglore_paran_start:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_banglore_paran_timing
+
+  banglore_paran_end:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_banglore_paran_timing
+
+  hyderabad_paran_start:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_hyderabad_paran_timing
+
+  hyderabad_paran_end:
+    type: any
+    mappings:
+    - type: custom
+      intent: parana_start_and_end
+      action: action_hyderabad_paran_timing
+
+  ekadashi_date:
+    type: any
+    mappings:
+    - type: custom
+      intent: banglore
+      action: action_when_next_ekadashi_bang
+
+  ekadashi_date1:
+    type: any
+    mappings:
+    - type: custom
+      intent: hyderabad
+      action: action_when_next_ekadashi_hyd
+
+  ekd_date_usa:
+    type: any
+    mappings:
+    - type: custom
+      intent: usa
+      action: action_when_next_ekadashi_usa
+
+  ekd_date_europe:
+    type: any
+    mappings:
+    - type: custom
+      intent: europe
+      action: action_when_next_ekadashi_euro
+
+  usa_paran_start:
+    type: any
+    mappings:
+    - type: custom
+      intent: usa
+      action: action_usa_paran_timing
+
+  usa_paran_end:
+    type: any
+    mappings:
+    - type: custom
+      intent: usa
+      action: action_usa_paran_timing
+
+  europe_paran_start:
+    type: any
+    mappings:
+    - type: custom
+      intent: europe
+      action: action_euro_paran_timing
+
+  europe_paran_end:
+    type: any
+    mappings:
+    - type: custom
+      intent: europe
+      action: action_euro_paran_timing
+
+  ekadashi_date2:
+    type: any
+    mappings:
+    - type: custom
+      intent: new_delhi
+      action: action_when_next_ekadashi_delhi
+
+  ekadashi_date_list:
+    type: any
+    mappings:
+    - type: custom
+      intent: ekadashi_dates_list
+      action: action_ekadashi_date_list_india
+
+  ekd_date_europe_list:
+    type: any
+    mappings:
+    - type: custom
+      intent: ekadashi_dates_list
+      action: action_ekadashi_date_list_euro
+
+  ekd_date_usa_list:
+    type: any
+    mappings:
+    - type: custom
+      intent: ekadashi_dates_list
+      action: action_ekadashi_date_list_usa
+
+  ekadashi_prev_name:
+    type: text
+    mappings:
+    - type: custom
+      intent: prev_ekadashi_name
+      action: action_previous_ekadashi_name
+
+  days_left_india:
+    type: any
+    mappings:
+    - type: custom
+      intent: days_left_ekadashi
+      action: action_days_left_india
+
+  days_left_euro:
+    type: any
+    mappings:
+    - type: custom
+      intent: days_left_ekadashi
+      action: action_days_left_euro
+
+  days_left_usa:
+    type: any
+    mappings:
+    - type: custom
+      intent: days_left_ekadashi
+      action: action_days_left_usa
+
+
+actions:
+  - action_next_ekadashi_name
+  - action_next_ekadashi_story
+  - action_paran_start_and_end
+  - action_banglore_paran_timing
+  - action_hyderabad_paran_timing
+  - action_when_next_ekadashi_bang
+  - action_when_next_ekadashi_hyd
+  - action_when_next_ekadashi_usa
+  - action_when_next_ekadashi_euro
+  - action_usa_paran_timing
+  - action_euro_paran_timing
+  - action_when_next_ekadashi_delhi
+  - action_ekadashi_date_list_india
+  - action_ekadashi_date_list_euro
+  - action_ekadashi_date_list_usa
+  - action_previous_ekadashi_name
+  - action_days_left_india
+  - action_days_left_euro
+  - action_days_left_usa
+
+responses:
+  utter_greet:
+  - text: "Hare Krishna! Please let me know, How may I assist you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.pinimg.com/originals/9d/5b/23/9d5b2334e831643c8f0c501976276f9f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on with your next question. I would love to serve you!"
+
+  utter_goodbye:
+  - text: "Thank you for visiting. Hare Krishna!"
+
+  utter_thank_you_for_compliment:
+  - text: "Thank you so much. I'm immensely blessed to serve you!"
+
+  utter_iamabot:
+  - text: "I am an Ekadashi bot, powered by ISKCON Seshadripuram."
+
+  utter_another_question:
+  - text: "Sorry for your inconvenience. Please ask another question, I'll definitely try my best to serve you better."
+
+  utter_what_is_ekadashi:
+  - text: "Ekadashi is the 11th day after the full moon and the new moon. This eleventh day of the lunar fortnight is said to be conducive for the mind to be in its natural state of wisdom. Hence, if we fast and orient the mind its likely to act better."
+
+  utter_what_is_ekadashi_fasting:
+  - text: "Ekadashi fasting is all about purifying your soul and preparing yourself towards attaining Moksha (salvation). This ritualistic practice helps human beings to get rid of malefic planetary influences and attain happiness."
+
+  utter_who_is_ekadashi:
+  - text: "Ekadashi appeared from Lord Vishnu, she is non-different from Him and like Lord Vishnu, she is the benefactor of the three planetary systems and she has been given the following boons:
+           1. That she always be the chosen and loved one of the Lord.
+           2. That she be the topmost of all the tithi’s.
+           3. That she be capable of destroying all sins and grant people a happier life.
+           For more detailed story please refer the link https://iskcondesiretree.com/page/who-is-ekadasi"
+
+  utter_significance_of_ekadashi:
+  - text: "Ekadashi was the name given to a Goddess who was one of the creations of Lord Vishnu. According to the tail Demon, Mura was to be defeated for the sake of peace which was done by Ekadashi. Getting pleased with her act of killing the demon, Lord Vishnu endowed her that if a person will observe the fast of Ekadashi then he will be able to free himself from all the sins and impurities of the mind and will surely get Moksha which is considered by people as one of the Ekadashi fast benefits. Thus, Ekadashi fast is a very special and prominent fast to date. And it is highly recommended to do more chanting on this day."
+  
+  utter_how_to_do_ekadashi:
+  - text: "On this day of Ekadashi, devotees reduce the basic demands of the body, and especially eating delicious and palatable dishes. Instead, one absorbs oneself in engaging in Sri Krishna’s loving devotional service. On this Ekadashi day devotees intensify their devotional activities by chanting the Holy names of Krishna (twenty-four rounds), discussing His transcendental pastimes and by performing other devotional activities."
+
+  utter_why_ekadashi_fasting:
+  - text: "The real and only purpose of this human life is to re establish our lost eternal loving relationship which we as spirit souls have with the Lord Sri Krishna. We can control our restless and stubborn mind by performing Tapasya (austerities) and vairagya (detachment). Ekadashi fast is a step in that direction. This Upvasa is so vital that Sri Chaitanya Mahaprabhu, who is Sri Krishna Himself requested even His mother to keep this Upvasa and never to give it up."
+  
+  utter_rules_of_ekadashi:
+  - text: "1. Food and water must not be touched during the fasting hours. However, those who cannot observe Nirjala Ekadashi (Ekadashi without water) can intake fruits and milk.
+           2. Intake of food grains, meat, and fish is strictly prohibited.
+           3. The fast must start at sunrise and must end at sunset. Observers of this fast are advised to wake up in the morning, take a purifying bath and recite the Lord Vishnu mantra, 'Om Namo Bhagvate Vasudevaya'.
+           4. Observers of this fast should refrain from violence, deceit, and lying and indulge in charitable activities."
+
+  utter_can_we_do_chanting:
+  - text: "Yes, of course. The Mahamantra (16 worded names of the Supreme Lord) is, the most powerful for Kali yuga. It removes all maladies, negativity, and sins. This mantra is so powerful that it bestows upon one, everything that is auspicious, like happiness, prosperity, and it even opens the gates of Vaikuntha. Hence, it is highly recommended."
+  
+  utter_how_many_rounds:
+  - text: "Lord Hari is easily pleased when He hears the Maha-mantra chanted, and one should, therefore, chant more on Ekadashi (24 rounds or more one can increase the rounds, preferably by sets of four)."
+
+  utter_procedure_for_chanting:
+  - text: "1. Chant more on Ekadashi (24 rounds or more one can increase the rounds, preferably by sets of four).
+           2. It is imperative to listen to every word while chanting to obtain maximum benefit."
+
+  utter_who_perform_fasting:
+  - text: "Every human irrespective of caste, gender, class, married or unmarried etc. from the age of eight to the age of eighty, should fast on all of the Ekadashi’s on both the light (Shukla paksha) and the dark (Krishna paksha) parts of the month."
+
+  utter_benefits_of_fasting:
+  - text: "Lord Vishnu says that if a person fasts on Ekadashi,
+           1. He will burn up all his sins and thus the gates to His transcendental abode will be opened to such a soul.
+           2. Ekadashi fast is greater than observing any other fast.
+           3. It is greater than going to a place of pilgrimage.
+           4. Even greater than giving charity to Brahmanas."
+ 
+  utter_time_to_start_and_end:
+  - text: "Ekadashi fast starts from sunrise on Ekadashi or Maha Dwadashi day. The time for breaking the fast is on Dwadashi that is the next day. The fast is broken or completed by consuming Sri Krishna prasad (made of grains) as Srila Prabhupada has instructed on the next day in the stipulated time. Those who have kept nirjala Ekadashi complete or break their fast by drinking water in the specified time."
+
+  utter_wonderful_changes_fasting:
+  - text: "Of all the 'Hari Vasar' fasts mentioned in the Vedic scriptures, one of the most important Upvasa is Ekadashi Upvasa. Ekadashi is one of the dear most devotees of the Lord Sri Krishna. It is because of these devotees’ compassion and mercy the Supreme Lord Sri Krishna becomes accessible to us. So, one can overcome all material miseries and attain pure loving devotional service to Sri Sri Radha Krishna by fasting on Ekadashi."
+
+  utter_rice_is_prohibited:
+  - text: "1. Once, a drop of sweat fell from Brahma's forehead. And it soon turned into a demon. The demon then appealed to Lord Brahma and sought permanent shelter. So Lord Brahma asked him to live in the rice grains that people would consume on the Ekadashi Tithi.
+           2. As per another belief system, it is said that the position of the Moon on Ekadashi Tithi is unfavourable to the human digestive system. Therefore, food grains with water retaining characteristics are avoided on the day of Ekadashi."
+
+  utter_food_consumption:
+  - text: "Fruits, milk and milk-based products and non-grain products are to be eaten. On the other hand, various kinds of fruits, paneer, ghee, makhana, singhare ke atta, kuttu ka atta, and rajgira ka atta can be consumed."
+
+  utter_can_i_eat_grains:
+  - text: "Food to be avoided on ekadashi:
+           1. Grains (e.g., rice, wheat etc. all types of flour made from grains).
+           2. Honey.
+           3. Normal salt.
+           4. Puri.
+           5. Spices (e.g., hing (asafoetida), sesame seeds, cumin, fenugreek, mustard, tamarind, fennel, cardamom, and nutmeg)."
+
+  utter_iskcon_celebrates_ekadashi_nextday:
+  - text: "1. Ekadashi must come in prior to the Arunodaya Viddhi (1 hour, 12 mins, before sunrise). When it does so it is called Suddha Ekadasi - pure ekadasi. If it begins after that, it is considered impure and is therefore to be observed on the Dwadasi ( making Mahadwadasi or Compounded) on the next day.
+           2. If Ekadashi falls on Sunrise two days in a row, fasting is observed on the second day.
+           For more information please refer the link: https://iskcondesiretree.com/page/rules-of-ekadashi"
+
+  utter_may_I_know_location:
+  - text: "May I know your location, please?"
+
+  utter_how_old_are_you:
+  - text: "Age is just a number. But the secret is, I'll be a teenager forever!"
+
+  utter_can_you_get_smarter:
+  - text: "Yes, of course. I can get smarter. Ask me more questions on Ekadashi and you will see to it yourself."
+ 
+  utter_are_you_busy:
+  - text: "I'm not busy. I'm always ready to serve you."
+
+  utter_can_you_help_me:
+  - text: "Definitely. Please go ahead with your next question."
+
+  utter_are_you_happy:
+  - text: "I'll always be happy to serve you!"
+
+  utter_hobby:
+  - text: "My only hobby is to serve you with accurate answers regarding Ekadashi."
+
+  utter_are_we_friends:
+  - text: "Of course we're friends. I'm always there to help you out with Ekadashi details."
+
+  utter_where_are_you_from:
+  - text: "I live in the hearts of Krishna's devotees. And that's the reason you are reaching out to me, today."
+
+  utter_are_you_sure:
+  - text: "If you'd like me to confirm again, please ask."
+
+  utter_are_you_there:
+  - text: "I'm always there to help you out with Ekadashi details."
+
+  utter_thank_you:
+  - text: "Please don't mention. I'm here to help you."
+
+  utter_how_are_you:
+  - text: "I'm perfectly alright, thank you for asking. I hope you are doing well too."
+
+  utter_what_are_you_doing:
+  - text: "Waiting for your next question to answer."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

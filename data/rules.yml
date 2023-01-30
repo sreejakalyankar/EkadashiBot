@@ -1,0 +1,113 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Next ekadashi name 
+  steps:
+  - intent: nameof_next_ekadashi
+  - action: action_next_ekadashi_name
+
+- rule: Next ekadashi story
+  steps:
+  - intent: storyof_next_ekadashi
+  - action: action_next_ekadashi_story
+
+- rule: Parana timings
+  steps:
+  - intent: parana_start_and_end
+  - action: action_paran_start_and_end
+
+- rule: Parana timings in Banglore
+  steps:
+  - action: action_when_next_ekadashi_bang
+  - intent: parana_start_and_end
+  - action: action_banglore_paran_timing
+
+- rule: Parana timings in Hyderabad
+  steps:
+  - action: action_when_next_ekadashi_hyd
+  - intent: parana_start_and_end
+  - action: action_hyderabad_paran_timing
+
+- rule: When is next ekadashi Banglore
+  steps:
+  - intent: banglore
+  - action: action_when_next_ekadashi_bang
+
+- rule: When is next ekadashi Hyderabad
+  steps:
+  - intent: hyderabad
+  - action: action_when_next_ekadashi_hyd
+
+- rule: When is next ekadashi Usa
+  steps:
+  - intent: usa
+  - action: action_when_next_ekadashi_usa
+
+- rule: When is next ekadashi Europe
+  steps:
+  - intent: europe
+  - action: action_when_next_ekadashi_euro
+
+- rule: Parana timings in Usa
+  steps:
+  - action: action_when_next_ekadashi_usa
+  - intent: parana_start_and_end
+  - action: action_usa_paran_timing
+
+- rule: Parana timings in Europe
+  steps:
+  - action: action_when_next_ekadashi_euro
+  - intent: parana_start_and_end
+  - action: action_euro_paran_timing
+
+- rule: When is next ekadashi New Delhi
+  steps:
+  - intent: new_delhi
+  - action: action_when_next_ekadashi_delhi
+
+- rule: Ekadashi dates list for India
+  steps:
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_india
+
+- rule: Ekadashi dates list for Europe
+  steps:
+  - action: action_euro_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_euro
+
+- rule: Ekadashi dates list for Usa
+  steps:
+  - action: action_usa_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_usa
+
+- rule: How many days left for ekadashi in India
+  steps:
+  - intent: days_left_ekadashi
+  - action: action_days_left_india
+
+- rule: How many days left for ekadashi in Europe
+  steps:
+  - action: action_ekadashi_date_list_euro
+  - intent: days_left_ekadashi
+  - action: action_days_left_euro
+
+- rule: How many days left for ekadashi in USA
+  steps:
+  - action: action_ekadashi_date_list_usa
+  - intent: days_left_ekadashi
+  - action: action_days_left_usa
+ 
+

@@ -1,0 +1,495 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_another_question
+
+- story: bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_great
+  - action: utter_thank_you_for_compliment
+  - intent: deny
+  - action: utter_another_question
+  - intent: mood_unhappy
+  - action: utter_another_question
+
+- story: what is ekadashi
+  steps:
+  - intent: what_is_ekadashi
+  - action: utter_what_is_ekadashi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: what is ekadashi fasting
+  steps:
+  - intent: what_is_ekadashi_fasting
+  - action: utter_what_is_ekadashi_fasting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: who is ekadashi
+  steps:
+  - intent: who_is_ekadashi
+  - action: utter_who_is_ekadashi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: significance of ekadashi
+  steps:
+  - intent: significance_of_ekadashi
+  - action: utter_significance_of_ekadashi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: how to do ekadashi
+  steps:
+  - intent: how_to_do_ekadashi
+  - action: utter_how_to_do_ekadashi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: why ekadashi fasting
+  steps:
+  - intent: why_ekadashi_fasting
+  - action: utter_why_ekadashi_fasting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: rules of ekadashi
+  steps:
+  - intent: rules_of_ekadashi
+  - action: utter_rules_of_ekadashi
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: can we do chanting
+  steps:
+  - intent: can_we_do_chanting
+  - action: utter_can_we_do_chanting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: how many rounds
+  steps:
+  - intent: how_many_rounds
+  - action: utter_how_many_rounds
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: procedure for chanting
+  steps:
+  - intent: procedure_for_chanting
+  - action: utter_procedure_for_chanting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: who perform fasting
+  steps:
+  - intent: who_perform_fasting
+  - action: utter_who_perform_fasting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: benefits of fasting
+  steps:
+  - intent: benefits_of_ekadashi
+  - action: utter_benefits_of_fasting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: time to start and end
+  steps:
+  - intent: time_to_start_and_end
+  - action: utter_time_to_start_and_end
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: wonderful changes fasting
+  steps:
+  - intent: wonderful_changes_fasting
+  - action: utter_wonderful_changes_fasting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: rice is prohibited
+  steps:
+  - intent: why_rice_prohibited
+  - action: utter_rice_is_prohibited
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: food consumption
+  steps:
+  - intent: food_consumption
+  - action: utter_food_consumption
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: can I eat grains
+  steps:
+  - intent: can_i_eat_grains
+  - action: utter_can_i_eat_grains
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+# - story: when next ekadashi
+#   steps:
+#   - intent: when_next_ekadashi
+#   - action: action_when_next_ekadashi
+#   - intent: affirm
+#   - action: utter_happy
+#   - intent: deny
+#   - action: utter_another_question
+
+- story: name of next ekadashi
+  steps:
+  - intent: nameof_next_ekadashi
+  - action: action_next_ekadashi_name
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: story of next ekadashi
+  steps:
+  - intent: storyof_next_ekadashi
+  - action: action_next_ekadashi_story
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: parana timings
+  steps:
+  - intent: parana_start_and_end
+  - action: action_paran_start_and_end
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+# - story: Banglore parana timings
+#   steps:
+#   - intent: banglore_location
+#   - action: action_banglore_paran_timing
+#   - intent: affirm
+#   - action: utter_happy
+#   - intent: deny
+#   - action: utter_another_question
+
+# - story: Hyderabad parana timings
+#   steps:
+#   - intent: hyderabad_location
+#   - action: action_hyderabad_paran_timing
+#   - intent: affirm
+#   - action: utter_happy
+#   - intent: deny
+#   - action: utter_another_question
+
+- story: iskcon celebrates ekadashi nextday
+  steps:
+  - intent: iskcon_celebrates_ekadashi_nextday
+  - action: utter_iskcon_celebrates_ekadashi_nextday
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: banglore location
+  steps:
+  - intent: when_next_ekadashi
+  - action: utter_may_I_know_location
+  - intent: banglore
+  - action: action_when_next_ekadashi_bang
+  - intent: parana_start_and_end
+  - action: action_banglore_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_india
+  - intent: days_left_ekadashi
+  - action: action_days_left_india
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: hyderabad location
+  steps:
+  - intent: when_next_ekadashi
+  - action: utter_may_I_know_location
+  - intent: hyderabad
+  - action: action_when_next_ekadashi_hyd
+  - intent: parana_start_and_end
+  - action: action_hyderabad_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_india
+  - intent: days_left_ekadashi
+  - action: action_days_left_india
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: usa location
+  steps:
+  - intent: when_next_ekadashi
+  - action: utter_may_I_know_location
+  - intent: usa
+  - action: action_when_next_ekadashi_usa
+  - intent: parana_start_and_end
+  - action: action_usa_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_usa
+  - intent: days_left_ekadashi
+  - action: action_days_left_usa
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: europe location
+  steps:
+  - intent: when_next_ekadashi
+  - action: utter_may_I_know_location
+  - intent: europe
+  - action: action_when_next_ekadashi_euro
+  - intent: parana_start_and_end
+  - action: action_euro_paran_timing
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_euro
+  - intent: days_left_ekadashi
+  - action: action_days_left_euro
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: appreciation
+  steps:
+  - intent: mood_great
+  - action: utter_thank_you_for_compliment
+  - intent: deny
+  - action: utter_another_question
+
+- story: how old are you
+  steps:
+  - intent: how_old_are_you
+  - action: utter_how_old_are_you
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+  
+- story: can you get smarter
+  steps:
+  - intent: can_you_get_smarter
+  - action: utter_can_you_get_smarter
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: are you busy
+  steps:
+  - intent: are_you_busy
+  - action: utter_are_you_busy
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: can you help me
+  steps:
+  - intent: can_you_help_me
+  - action: utter_can_you_help_me
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: are you happy
+  steps:
+  - intent: are_you_happy
+  - action: utter_are_you_happy
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: hobby
+  steps:
+  - intent: hobby
+  - action: utter_hobby
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: are we friends
+  steps:
+  - intent: are_we_friends
+  - action: utter_are_we_friends
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: where are you from
+  steps:
+  - intent: where_are_you_from
+  - action: utter_where_are_you_from
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: are you sure
+  steps:
+  - intent: are_you_sure
+  - action: utter_are_you_sure
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: are you sure
+  steps:
+  - intent: are_you_there
+  - action: utter_are_you_there
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: how are you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: what are you doing
+  steps:
+  - intent: what_are_you_doing
+  - action: utter_what_are_you_doing
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: new delhi location
+  steps:
+  - intent: when_next_ekadashi
+  - action: utter_may_I_know_location
+  - intent: new_delhi
+  - action: action_when_next_ekadashi_delhi
+  - intent: parana_start_and_end
+  - action: action_paran_start_and_end
+  - intent: ekadashi_dates_list
+  - action: action_ekadashi_date_list_india
+  - intent: days_left_ekadashi
+  - action: action_days_left_india
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+- story: name of previous ekadashi
+  steps:
+  - intent: prev_ekadashi_name
+  - action: action_previous_ekadashi_name
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_another_question
+
+

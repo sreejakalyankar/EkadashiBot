@@ -1,0 +1,582 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hare krishna
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - I'm going to bed
+    - I'd like to see you again
+    - I'll be back
+    - I will be back again
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - okay
+    - yea
+    - yeah
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - you're annoying
+    - you are annoying
+    - you are bad
+    - you're bad
+    - you are boring
+    - you are crazy
+    - that's bad
+    - i'm very angry right now
+    - I am bored
+    - I don't want to talk to you
+    - I'm tired
+    - you are wrong
+    - I'm busy
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - nice
+    - lovely
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am happy
+    - I am very happy
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - satisfied
+    - you are great
+    - you are beautiful
+    - you are smart
+    - you are intelligent
+    - you are so clever
+    - you are good
+    - you are right
+    - no problem
+    - well done
+    - wow
+    - nice to meet you
+    - nice to talk to you
+    - nice to see you
+    - I'm back
+    - I'm so excited
+    - I am here
+    - I like you
+    - I need some advice
+    - I'm just testing you
+    - I'm waiting
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - bad
+    - not nice
+    - not satisfied
+    - I am so lonely
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - you're a chatbot
+    - you are a chatbot
+    - who are you?
+    - who designed you?
+    - who is your boss?
+    - are you real?
+    - what's your name
+
+- intent: what_is_ekadashi
+  examples: |
+    - what is ekadashi?
+    - what is ekadasi
+    - what is ekadashi
+    - wt is ekadashi
+    - ekadashi
+    - ekadasi
+    - tell me about ekadashi
+
+- intent: what_is_ekadashi_fasting
+  examples: |
+    - what is ekadashi fasting?
+    - what is ekadasi fasting
+    - what is ekadashi fasting
+    - wt is ekadashi fasting
+    - ekadashi fasting
+    - ekadasi fasting
+    - tell me about ekadashi fasting
+  
+- intent: who_is_ekadashi
+  examples: |
+    - who is ekadashi?
+    - who is ekadasi
+    - who is ekadashi
+    - who ekadashi
+    - tell me about who is ekadashi
+
+- intent: significance_of_ekadashi
+  examples: |
+    - significance of ekadashi fasting?
+    - significance of ekadashi?
+    - significance of ekadasi fasting
+    - tell me about the significance of ekadashi
+    - importance of ekadashi fasting
+    - important
+    - essential
+    - crucial
+
+- intent: how_to_do_ekadashi
+  examples: |
+    - how to do ekadashi fasting?
+    - how to do ekadashi?
+    - how to do ekadasi fasting
+    - tell me how to observe ekadashi fasting
+    - observance of ekadashi 
+
+- intent: why_ekadashi_fasting
+  examples: |
+    - why we should do fasting on ekadashi?
+    - why fasting on ekadasi
+    - why fasting on ekadashi
+    - ekadashi fasting why
+    - why fasting ekadashi
+
+- intent: rules_of_ekadashi
+  examples: |
+    - what are the rules of ekadashi fasting?
+    - what are the rules of ekadasi fasting?
+    - rules of ekadashi fasting
+    - rules of ekadasi fasting
+    - rules
+    - rule     
+
+- intent: can_we_do_chanting
+  examples: |
+    - can we do chanting during ekadashi fasting?
+    - is chanting recommended during ekadashi fasting?
+    - chanting on ekadashi
+    - chanting on ekadasi
+    - chanting is necessary
+    - chanting
+
+- intent: how_many_rounds
+  examples: |
+    - how many rounds should we chant on ekadashi fasting?
+    - how many rounds?
+    - how many ekadasi rounds
+    - chanting rounds
+
+- intent: procedure_for_chanting
+  examples: |
+    - what is the procedure for chanting?
+    - procedure what
+    - chanting procedure
+    - chanting steps
+    - chanting process
+
+- intent: who_perform_fasting
+  examples: |
+    - who can perform ekadashi fasting?
+    - can I perform fasting
+    - can I do ekadasi fasting
+    - can I do ekadashi fasting
+    - perform fasting
+    - do fast
+    - perform fast
+
+- intent: benefits_of_ekadashi
+  examples: |
+    - benefits of ekadashi fasting?
+    - what are the benefits of ekadahi fasting?
+    - benefits of fasting
+    - benefits
+    - uses of fasting
+    - benefit
+
+- intent: time_to_start_and_end
+  examples: |
+    - time to start the ekadashi and end the ekadashi
+    - timings to start the fast and break it.
+    - start the fast and break the fast.
+    - timings
+    - start
+    - end
+  
+- intent: wonderful_changes_fasting
+  examples: |
+    - can we bring wonderful changes into our life by fasting?
+    - wonderful changes by fasting.
+    - wonderful changes.
+    - beautiful changes
+    - miracles
+    - positive life
+    
+- intent: why_rice_prohibited
+  examples: |
+    - why is rice strictly prohibited on ekadashi?
+    - why we should not consume rice?
+    - not consume rice
+    - disadvantages of consuming rice
+    - why I should not eat rice on ekadashi
+
+- intent: food_consumption
+  examples: |
+    - On the day of ekadashi, what are we suppose to consume?
+    - what should we consume?
+    - food consumption
+    - which food items should we consume?
+    - which food items should we take?
+    - what can i eat on ekadasi
+
+- intent: can_i_eat_grains
+  examples: |
+    - Can I eat grains on ekadashi?
+    - Can I eat honey on ekadashi?
+    - Can I eat normal salt on ekadashi?
+    - Can I eat puri on ekadashi?
+    - can I consume grains on ekadashi?
+    - can I have grains on ekadashi
+    - can I have grains on ekadasi
+    - food items to be avoided on ekadashi
+    - food items to be avoided
+    - food to be avoided
+    - rice
+    - wheat
+    - grains
+    - honey
+    - normal salt
+    - puri
+    - can I eat mustard on ekadashi
+    - hing
+    - asafoetida
+    - sesame seeds
+    - cumin
+    - fenugreek
+    - mustard
+    - tamarind
+    - fennel
+    - cardamom
+    - nutmeg
+
+
+- intent: when_next_ekadashi
+  examples: |
+    - when is next ekadashi?
+    - when is next ekadashi
+    - when is next ekadasi
+    - next ekadashi?
+    - next ekadashi date
+    - date of next ekadashi
+    - I want to know ekadasi next
+    - I want to know next ekadasi
+    - can you tell ekadasi date
+    - tell me next ekadasi date
+
+- intent: nameof_next_ekadashi
+  examples: |
+    - what is the name of next ekadashi?
+    - name of next ekadashi?
+    - next ekadashi name
+    - name the next ekadashi
+    - next ekadasi name
+    - please tell the name of next ekadashi
+    - want to know the name of next ekadasi 
+    - what's the name of ekadasi
+
+- intent: storyof_next_ekadashi
+  examples: |
+    - what is the story of next ekadashi?
+    - story of next ekadashi?
+    - next ekadashi story
+    - story of ekadashi
+    - story
+    - please tell the story of next ekadashi
+    - ekadashi story
+    - ekadasi story
+
+- intent: parana_start_and_end
+  examples: |
+    - what is the parana time of next ekadashi?
+    - what is the parana start time of next ekadashi?
+    - what is the parana end time of next ekadashi?
+    - parana starting and ending time
+    - paran timings of ekadashi
+    - when to break the ekadashi fast?
+    - breaking the fast
+    - break the ekadasi fast
+    - when to break it
+    - break
+    - breaking ekadashi fasting
+    - when can I break my ekadashi fast?
+    - when can I break my ekadasi fast?
+    - what about paran
+
+# - intent: banglore_location
+#   examples: |
+#     - what is the parana time of next ekadashi in banglore location?
+#     - what is the parana time of next ekadashi in bengaluru location?
+#     - what is the parana start time of next ekadashi in banglore?
+#     - what is the parana end time of next ekadashi banglore?
+#     - what is the parana start time of next ekadashi in bengaluru?
+#     - what is the parana end time of next ekadashi bengaluru?
+#     - parana timings in bengaluru
+#     - parana timings in banglore
+#     - paran time in banglore
+#     - banglore
+#     - bengaluru
+#     - parana timings
+#     - paran time
+#     - paran time in bengaluru
+#     - parana starting and ending time in banglore
+#     - parana starting and ending time in bengaluru
+#     - paran timings of ekadashi in banglore
+#     - paran timings of ekadashi in bengaluru
+#     - paran timings of ekadasi in banglore
+#     - paran timings of ekadasi in bengaluru
+#     - when to break my ekadashi fast in bengaluru location?
+#     - when to break my ekadasi fast in banglore location?
+#     - when can I break my ekadashi fast in banglore?
+#     - when can I break my ekadashi fast in bengaluru?
+#     - when can I break my ekadasi fast in banglore?
+#     - when can I break my ekadasi fast in bengaluru?
+
+# - intent: hyderabad_location
+#   examples: |
+#     - what is the parana time of next ekadashi in hyderabad location?
+#     - what is the parana start time of next ekadashi in hyderabad?
+#     - what is the parana end time of next ekadashi hyderabad?
+#     - parana timings in hyderabad
+#     - parana timings of next ekadash in hyderabad
+#     - paran time in hyderabad
+#     - parana starting and ending time in hyderabad
+#     - paran timings of ekadashi in hyderabad
+#     - when to break my ekadashi fast in hyderabad location?
+#     - when to break my ekadasi fast in hyderabad location?
+#     - when can I break my ekadashi fast in hyderabad?
+
+- intent: iskcon_celebrates_ekadashi_nextday
+  examples: |
+    - why is iskcon ekadashi tomorrow when ekadashi is today as per hindu calendar?
+    - why is iskcon ekadasi tomorrow when ekadasi is today as per hindu calendar?
+    - why is iskcon celebrating ekadashi tomorrow when ekadashi is today as per hindu calendar?
+    - why is iskcon ekadashi tomorrow when ekadashi is today?
+    - ekadashi is today then why iskcon celebrating tomorrow
+    - ekadasi is today then why iskcon celebrating tomorrow
+    - today is ekadashi but why iskcon celebrating tomorrow
+    - why iskcon ekadashi is tomorrow
+    - why iskcon ekadashi is tommorrow 
+
+- intent: banglore
+  examples: |
+    - banglore
+    - bengaluru
+
+- intent: hyderabad
+  examples: |
+    - hyderabad
+    - hyd
+
+- intent: usa
+  examples: |
+    - los angeles
+    - los angeles CA
+    - CA - los angeles
+    - US
+    - United States of America
+    - USA
+
+- intent: europe
+  examples: |
+    - london
+    - united kingdom
+    - europe
+
+- intent: how_old_are_you
+  examples: |
+    - how old are you?
+    - your age
+    - how much is your age?
+
+
+- intent: can_you_get_smarter
+  examples: |
+    - can you get smarter
+    - are you smarter?
+    - can you be smarter?
+    - can you get intelligent?
+    - can you become smart
+    - can you become intelligent
+    - can you become more knowledgeable
+
+- intent: are_you_busy
+  examples: |
+    - are you busy?
+    - you are busy
+
+- intent: can_you_help_me
+  examples: |
+    - can you help me?
+    - will you help me
+    - I want your help
+    - I want your help regarding ekadashi
+    - talk to me
+    - answer my question
+    - tell me
+
+- intent: are_you_happy
+  examples: |
+    - are you happy?
+    - you are happy
+    - are you happy
+
+- intent: hobby
+  examples: |
+    - what are your hobbies?
+    - hobby
+    - do you have a hobby?
+
+- intent: are_we_friends
+  examples: |
+    - are we friends?
+    - you are my friend
+
+- intent: where_are_you_from
+  examples: |
+    - where are you from?
+    - where do you stay
+    - where do you live
+
+- intent: are_you_sure
+  examples: |
+    - are you sure?
+    - are you correct?
+    - what do you mean?
+    - are you right?
+
+- intent: are_you_there
+  examples: |
+    - are you there?
+    - there?
+    
+- intent: thank_you
+  examples: |
+    - thank you
+    - thank u
+    - tq
+    - ty
+    - tqsm
+    - shukriya
+    - thanks
+    
+- intent: how_are_you
+  examples: |
+    - how are you?
+    - hru
+    - how are you doing?
+    - how do you do?
+    
+- intent: what_are_you_doing
+  examples: |
+    - what's up
+    - what are you doing?
+
+- intent: new_delhi
+  examples: |
+    - new delhi
+    - delhi
+
+- intent: ekadashi_dates_list
+  examples: |
+    - list of next ekadashis 
+    - next ekadashis list
+    - dates of next ekadashis
+    - next month ekadashis list
+    - tell me the list of ekadashis in next month
+    - list next ekadashis
+    - next ekadashis dates
+    - next month ekadashis
+
+- intent: prev_ekadashi_name
+  examples: |
+    - what was the previous ekadashi
+    - previous ekadashi name
+    - name of previous ekadashi
+    - previous ekadasi name
+    - I wan to know the previous ekadashi name
+    - tell me previous ekadshi name
+    - previous name of ekadashi 
+    - previous name ekadashi 
+    - previus ekadasi name
+
+- intent: days_left_ekadashi
+  examples: |
+    - how many days left out for next ekadshu
+    - days left out for next ekadashi
+    - how many days for next ekadashi
+    - how many days for ekadshi
+    - next month ekadashi comes after how many days
+    - tell me days left for next ekadashi
+    - number of days left out for next ekadshi
+    - no of days for ekadashi
