@@ -237,14 +237,14 @@ stories:
   - intent: deny
   - action: utter_another_question
 
-- story: parana timings
-  steps:
-  - intent: parana_start_and_end
-  - action: action_paran_start_and_end
-  - intent: affirm
-  - action: utter_happy
-  - intent: deny
-  - action: utter_another_question
+#- story: parana timings
+ # steps:
+  #- intent: parana_start_and_end
+  #- action: action_paran_start_and_end
+  #- intent: affirm
+  #- action: utter_happy
+  #- intent: deny
+  #- action: utter_another_question
 
 # - story: Banglore parana timings
 #   steps:
