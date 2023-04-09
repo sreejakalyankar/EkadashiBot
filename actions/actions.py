@@ -45,7 +45,7 @@ class ActionNextEkadashiName(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -93,7 +93,7 @@ class ActionNextEkadashiStory(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -142,7 +142,7 @@ class ActionParanStartAndEnd(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -215,7 +215,7 @@ class ActionBangloreParanTiming(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -287,7 +287,7 @@ class ActionHyderabadParanTiming(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -356,7 +356,7 @@ class ActionWhenNextEkadashiBang(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -405,7 +405,7 @@ class ActionWhenNextEkadashiHyd(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -453,7 +453,7 @@ class ActionWhenNextEkadashiUSA(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -501,7 +501,7 @@ class ActionWhenNextEkadashiEuro(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -552,7 +552,7 @@ class ActionUsaParanTiming(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -625,7 +625,7 @@ class ActionEuroParanTiming(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -694,7 +694,7 @@ class ActionWhenNextEkadashiDelhi(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -742,7 +742,7 @@ class ActionEkadashiDateListIndia(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -788,7 +788,7 @@ class ActionEkadashiDateListEuro(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -834,7 +834,7 @@ class ActionEkadashiDateListUsa(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -883,7 +883,7 @@ class ActionPreviousEkadashiName(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -932,7 +932,7 @@ class ActionDaysLeftIndia(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -981,7 +981,7 @@ class ActionDaysLeftEuro(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
@@ -1030,7 +1030,7 @@ class ActionDaysLeftUsa(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         mydb = mysql.connector.connect(
-            host="localhost", 
+            host="172.31.36.226", 
             user="root", 
             passwd="bansilal", 
             database="rasa"
