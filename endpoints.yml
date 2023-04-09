@@ -11,7 +11,7 @@
 # https://rasa.com/docs/rasa/custom-actions
 
 action_endpoint:
-    url: "http://127.0.0.1:5055/webhook"
+    url: "http://172.31.36.226:5055/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
@@ -20,7 +20,7 @@ action_endpoint:
 tracker_store:
     type: SQL
     dialect: "mysql+pymysql"  # the dialect used to interact with the db
-    url: "mysql+pymysql://root:bansilal@localhost:3306/rasa"  # (optional) host of the sql db, e.g. "localhost"
+    url: "mysql+pymysql://root:bansilal@172.31.36.226:3306/rasa"  # (optional) host of the sql db, e.g. "localhost"
     db: "rasa"  # path to your db
     username: "root" # username used for authentication
     password: "bansilal" # password used for authentication
